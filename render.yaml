@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: examprep-ai
+    env: node
+    region: oregon
+    branch: main
+    buildCommand: npm install && npm --prefix client install && npm --prefix server install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5050
