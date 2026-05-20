@@ -85,6 +85,10 @@ Response includes:
 - study plan
 - critical thinking prompts
 
+## GitHub build status
+
+This repository now includes a GitHub Actions workflow at `.github/workflows/ci.yml` that installs dependencies for the root, client, and server, builds the frontend, and runs the server smoke test on every push or pull request to `main`.
+
 ## Suggested deployment
 
 - Frontend + backend together: Render, Railway, Fly.io, or a VPS
